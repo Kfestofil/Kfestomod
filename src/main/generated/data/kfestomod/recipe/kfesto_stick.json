@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": "kfestomod:dingot",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "D",
+    "D",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kfestomod:kfesto_stick"
+  }
+}

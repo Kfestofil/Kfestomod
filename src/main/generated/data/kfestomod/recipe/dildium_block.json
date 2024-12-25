@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "kfestomod:dingot",
+    "kfestomod:dingot",
+    "kfestomod:dingot",
+    "kfestomod:dingot",
+    "kfestomod:dingot",
+    "kfestomod:dingot",
+    "kfestomod:dingot",
+    "kfestomod:dingot",
+    "kfestomod:dingot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kfestomod:dildium_block"
+  }
+}

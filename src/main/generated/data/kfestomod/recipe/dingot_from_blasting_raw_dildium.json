@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "dingot",
+  "ingredient": "kfestomod:raw_dildium",
+  "result": {
+    "id": "kfestomod:dingot"
+  }
+}
