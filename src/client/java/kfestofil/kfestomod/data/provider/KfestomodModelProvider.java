@@ -26,5 +26,6 @@ public class KfestomodModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.DINGOT, Models.GENERATED);
         itemModelGenerator.register(ItemInit.PISSJAR, Models.GENERATED);
         itemModelGenerator.register(ItemInit.RAW_DILDIUM, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ARROW404, Models.GENERATED);
     }
 }

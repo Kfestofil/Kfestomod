@@ -12,10 +12,15 @@ import java.util.UUID;
 
 public class CustomPlayerSoundInstance extends MovingSoundInstance {
     private final PlayerEntity player;
+    private final UUID playerID;
+    private final Identifier soundId;
+
 
     public CustomPlayerSoundInstance(Identifier SoundId, SoundCategory category, UUID playerID,  Boolean _repeat, float _volume) {
         super(SoundEvent.of(SoundId), category, SoundInstance.createRandom());
         this.player = MinecraftClient.getInstance().world.getPlayerByUuid(playerID);
+        this.playerID = playerID;
+        this.soundId = SoundId;
         if (this.player == null) {
             this.setDone();
             return;
@@ -26,6 +31,18 @@ public class CustomPlayerSoundInstance extends MovingSoundInstance {
         this.x = player.getX();
         this.y = player.getY();
         this.z = player.getZ();
+    }
+
+    public UUID getPlayerID() {
+        return playerID;
+    }
+
+    public Identifier getSoundId() {
+        return soundId;
+    }
+
+    public void kill() {
+        this.setDone();
     }
 
     @Override

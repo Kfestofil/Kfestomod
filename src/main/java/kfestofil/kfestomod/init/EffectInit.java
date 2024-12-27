@@ -13,9 +13,9 @@ import net.minecraft.util.Identifier;
 
 public class EffectInit {
     public static final RegistryEntry<StatusEffect> JETSTREAMNESS = register("jetstreamness", new Jetstreamness(StatusEffectCategory.BENEFICIAL, 0xFF0000)
-            .addAttributeModifier(EntityAttributes.MOVEMENT_SPEED, Kfestomod.id("jetstreamness"), 1f,
+            .addAttributeModifier(EntityAttributes.MOVEMENT_SPEED, Kfestomod.id("jetstreamness"), 0.7f,
                     EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
-            .addAttributeModifier(EntityAttributes.ATTACK_SPEED, Kfestomod.id("jetstreamness"), 1f,
+            .addAttributeModifier(EntityAttributes.ATTACK_SPEED, Kfestomod.id("jetstreamness"), 0.7f,
                     EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static RegistryEntry<StatusEffect> register(String name, StatusEffect effect) {

@@ -1,7 +1,10 @@
 package kfestofil.kfestomod.Effect;
 
 import kfestofil.kfestomod.Helper.SegmentedSoundHandler;
+import kfestofil.kfestomod.Network.MovingSoundKillPayload;
 import kfestofil.kfestomod.Network.MovingSoundPayload;
+import kfestofil.kfestomod.init.EffectInit;
+import kfestofil.kfestomod.init.ItemInit;
 import kfestofil.kfestomod.init.SoundInit;
 import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
@@ -32,6 +35,12 @@ public class Jetstreamness extends StatusEffect {
 
     @Override
     public boolean applyUpdateEffect(ServerWorld world, LivingEntity entity, int amplifier) {
+        if(!entity.getMainHandStack().isOf(ItemInit.MURASAMA) && entity.getWorld() instanceof ServerWorld && entity.getServer() instanceof MinecraftServer) {
+            entity.removeStatusEffect(EffectInit.JETSTREAMNESS);
+            for (ServerPlayerEntity player : PlayerLookup.all(entity.getServer())) {
+                ServerPlayNetworking.send(player, new MovingSoundKillPayload(entity.getUuid(), SoundInit.TOTIKFR.id()));
+            }
+        }
         return super.applyUpdateEffect(world, entity, amplifier);
     }
 

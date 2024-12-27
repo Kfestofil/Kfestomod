@@ -26,5 +26,7 @@ public class KfestomodItemTagsProvider extends FabricTagProvider.ItemTagProvider
                 .add(ItemInit.MURASAMA);
         getOrCreateTagBuilder(ItemTags.WEAPON_ENCHANTABLE)
                 .add(ItemInit.MURASAMA);
+        getOrCreateTagBuilder(ItemTags.ARROWS)
+                .add(ItemInit.ARROW404);
     }
 }

@@ -1,10 +1,7 @@
 package kfestofil.kfestomod;
 
 import kfestofil.kfestomod.data.generator.KfestomodWorldGenerator;
-import kfestofil.kfestomod.data.provider.KfestomodBlockTagsProvider;
-import kfestofil.kfestomod.data.provider.KfestomodItemTagsProvider;
-import kfestofil.kfestomod.data.provider.KfestomodModelProvider;
-import kfestofil.kfestomod.data.provider.KfestomodRecipeProvider;
+import kfestofil.kfestomod.data.provider.*;
 import kfestofil.kfestomod.init.worldgen.ConfiguredFeatureInit;
 import kfestofil.kfestomod.init.worldgen.PlacedFeatureInit;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -21,6 +18,7 @@ public class KfestomodDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(KfestomodItemTagsProvider::new);
 		pack.addProvider(KfestomodWorldGenerator::new);
 		pack.addProvider(KfestomodRecipeProvider::new);
+		pack.addProvider(KfestomodEntityTypeTagsProvider::new);
 	}
 
 	@Override

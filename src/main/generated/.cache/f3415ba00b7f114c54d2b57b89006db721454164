@@ -2,6 +2,7 @@
 1b1b31515d457561f05221b6a8aebc8b030dbb6f assets/kfestomod/blockstates/deepslate_dildore.json
 58351b9a16caaf551204ed33c028aa6916fa9a7e assets/kfestomod/blockstates/dildium_block.json
 af499de45b76baf15488982f9a3e294bbe041886 assets/kfestomod/blockstates/dildore.json
+8d2388be2029fd0b1e7cb8f562f93701ce5750fe assets/kfestomod/items/arrow404.json
 a0440a11e5d2ddfb8cb2fd2e52c1aa9afe8596f0 assets/kfestomod/items/deepslate_dildore.json
 102ad7abd7a7cee140b74078ebe78d3071eb0087 assets/kfestomod/items/dildium_block.json
 438cb9c15755bed74f74396c74b36ce82f865d8e assets/kfestomod/items/dildore.json
@@ -12,6 +13,7 @@ cc76af5dfa0641d8a110b0dd8e19d5ac14d881e1 assets/kfestomod/items/piss_jar.json
 002eb71dbdda10a334f30cf56c28c0acfa183324 assets/kfestomod/models/block/deepslate_dildore.json
 4cf34945822ec904199d884047dd96c5a7a5181f assets/kfestomod/models/block/dildium_block.json
 82f5b468f232adad0c423724f0b346a2070134fc assets/kfestomod/models/block/dildore.json
+db206fee3f276bac9c534cf92460f23b430dab42 assets/kfestomod/models/item/arrow404.json
 73a33d7d417dd068ea49a28d2c27b5823745a837 assets/kfestomod/models/item/dingot.json
 af1e0525501d9f5013b88df7e745805419fbfbd7 assets/kfestomod/models/item/kfesto_stick.json
 2bb6d5e76f26e5ae06d32a9a917a4c949399f571 assets/kfestomod/models/item/piss_jar.json

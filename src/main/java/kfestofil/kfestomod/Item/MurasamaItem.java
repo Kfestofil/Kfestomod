@@ -41,7 +41,7 @@ public class MurasamaItem extends SwordItem {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        user.addStatusEffect(new StatusEffectInstance(EffectInit.JETSTREAMNESS, 200, 0)); // Speed II for 10 seconds
+        user.addStatusEffect(new StatusEffectInstance(EffectInit.JETSTREAMNESS, 20 * 140, 0)); // Speed II for 10 seconds
         return stack;
 //        Kfestomod.LOGGER.info("Finish using1");
 //        setChargeTime(stack, 0); // Reset charge time

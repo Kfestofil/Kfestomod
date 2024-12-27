@@ -33,6 +33,7 @@ public class Kfestomod implements ModInitializer {
 		EffectInit.init();
 		SoundInit.init();
 		NetworkInit.init();
+		EntityInit.init();
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
 			entries.addAfter(Items.RAW_GOLD, ItemInit.RAW_DILDIUM);
@@ -50,6 +51,10 @@ public class Kfestomod implements ModInitializer {
 		});
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
 			entries.addBefore(Items.FISHING_ROD, ItemInit.KFESTOSTICK);
+		});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+			entries.addAfter(Items.NETHERITE_SWORD, ItemInit.MURASAMA);
+			entries.addAfter(Items.ARROW, ItemInit.ARROW404);
 		});
 
 		LOGGER.info("Kfestomod initialized!");
